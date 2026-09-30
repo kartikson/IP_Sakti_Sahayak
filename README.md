@@ -4,7 +4,7 @@
 
 **A multilingual, RAG-based, source-cited AI assistant for Intellectual Property and regulatory guidance in Ayurveda, across national and international regimes.**
 
-Team **KG-FORGE** | **TEKATHON 5.0 (2026)** | Problem Statement **SIH26092** | Theme: MedTech / BioTech / HealthTech | Category: Software
+Team **KG-FORGE** | **SIH (2026)** | Problem Statement **SIH26045** | Theme: MedTech / BioTech / HealthTech | Category: Software
 
 > **Disclaimer:** IP-SAKTI Sahayak provides information, not legal advice. For case-specific decisions, consult a qualified IP professional or an IP facilitator.
 
