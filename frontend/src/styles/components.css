@@ -1779,6 +1779,121 @@ select.ui-input:focus {
   border-top: 1px dashed var(--color-primary-border);
 }
 
+/* ==========================================================================
+   Consultation Structured Guidance Table (Government Portal Institutional Style)
+   ========================================================================== */
+.gov-structured-verdict-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-primary, #1F3D2B);
+  line-height: 1.35;
+  margin: 18px 0 12px 0;
+}
+
+.gov-structured-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #D0D5D0;
+  table-layout: fixed;
+  font-family: inherit;
+  font-size: 13.5px;
+  margin: 12px 0 14px 0;
+  background-color: #FFFFFF;
+  box-shadow: none;
+}
+
+.gov-structured-table th,
+.gov-structured-table td {
+  border: 1px solid #D0D5D0;
+  padding: 12px 14px;
+}
+
+.gov-structured-table thead th {
+  background-color: #1B5E20;
+  color: #FFFFFF;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.gov-structured-table thead th.gov-structured-table__col-source {
+  text-align: right;
+}
+
+.gov-structured-table tbody td {
+  vertical-align: top;
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: var(--color-text-primary, #1A1A1A);
+}
+
+.gov-structured-table tbody tr:nth-child(odd) td {
+  background-color: #FFFFFF;
+}
+
+.gov-structured-table tbody tr:nth-child(even) td {
+  background-color: #F4F7F2;
+}
+
+/* 4px colored left-border accents for rows 3-7 */
+.gov-structured-table tbody tr.gov-row-accent--red td:first-child {
+  border-left: 4px solid #C62828 !important;
+}
+
+.gov-structured-table tbody tr.gov-row-accent--amber td:first-child {
+  border-left: 4px solid #C9A227 !important;
+}
+
+.gov-structured-table tbody tr.gov-row-accent--green td:first-child {
+  border-left: 4px solid #1B5E20 !important;
+}
+
+/* Small toggle link for full narrative explanation */
+.gov-explanation-toggle {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: var(--color-link, #1F5A8A);
+  font-size: 13px;
+  font-weight: 500;
+  font-family: inherit;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  margin: 10px 0 16px 0;
+  transition: color var(--transition-fast, 0.15s ease);
+}
+
+.gov-explanation-toggle:hover {
+  color: var(--color-primary, #1F3D2B);
+}
+
+.gov-explanation-toggle__chevron {
+  display: inline-block;
+  font-size: 11px;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.gov-explanation-toggle__chevron--expanded {
+  transform: rotate(180deg);
+}
+
+.gov-full-narrative-box {
+  margin: 0 0 16px 0;
+  padding: 14px 16px;
+  background-color: #F4F7F2;
+  border: 1px solid #D0D5D0;
+  border-radius: var(--radius-sm, 2px);
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--color-text-primary, #1A1A1A);
+}
+
 .workspace-step-list {
   padding-left: 20px;
   margin: 0;

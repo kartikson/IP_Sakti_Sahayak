@@ -222,6 +222,11 @@ export function getControlledDemoFallback(context = {}) {
       4,
       'Novel combination requires submission of published literature on safety, or pilot clinical study protocols before State Licensing Authority (SLA).'
     ),
+    buildCitation(
+      'biological-diversity-act-2002-s6',
+      5,
+      'Mandatory statutory approval from National Biodiversity Authority (NBA) via Form III application under Section 6 of the Biological Diversity Act, 2002 prior to patent grant.'
+    ),
   ];
 
   const fallbackChecklist = [
@@ -282,7 +287,7 @@ export function getControlledDemoFallback(context = {}) {
     guidance: {
       headline: 'Section 3(p) Anticipation Screened; Synergistic Evidence Required (Controlled Demo)',
       findingText:
-        'Controlled Demo Output: Analysis of the bio-enhanced Curcumin-Piperine formulation indicates that the botanical ingredients (Curcuma longa and Piper nigrum) have established textual recognition in classical Ayurvedic treatises indexed in the Traditional Knowledge Digital Library (TKDL) [3]. Under Section 3(p) of the Patents Act, 1970 [1], traditional knowledge per se is statutorily excluded from patentability. To overcome this exclusion and substantiate an inventive step, experimental biological assay data demonstrating synergy exceeding mere aggregation under Section 3(e) [2] must be submitted. Commercial licensing of this formulation as an Ayurvedic Proprietary Medicine must fulfill the evidence of effectiveness and safety requirements under Rule 158B of the Drugs & Cosmetics Rules, 1945 [4].',
+        'Controlled Demo Output: Analysis of the bio-enhanced Curcumin-Piperine formulation indicates that the botanical ingredients (Curcuma longa and Piper nigrum) have established textual recognition in classical Ayurvedic treatises indexed in the Traditional Knowledge Digital Library (TKDL) [3]. Under Section 3(p) of the Patents Act, 1970 [1], traditional knowledge per se is statutorily excluded from patentability. To overcome this exclusion and substantiate an inventive step, experimental biological assay data demonstrating synergy exceeding mere aggregation under Section 3(e) [2] must be submitted. Commercial licensing of this formulation as an Ayurvedic Proprietary Medicine must fulfill the evidence of effectiveness and safety requirements under Rule 158B of the Drugs & Cosmetics Rules, 1945 [4]. Furthermore, mandatory statutory clearance from the National Biodiversity Authority under Section 6 of the Biological Diversity Act, 2002 [5] is required prior to the grant of any patent.',
       recommendedAction:
         'Draft claims focused on the specific synergistic ratio and modified bioavailability profile. File Form III with National Biodiversity Authority clearance under Section 6 of Biological Diversity Act, 2002.',
       actionChecklist: fallbackChecklist,
