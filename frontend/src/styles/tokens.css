@@ -1,0 +1,175 @@
+/* ==========================================================================
+   IP-SAKTI Sahayak — Design System Tokens
+   Aesthetic: Government-Portal Style (GIGW Inspired, Institutional, Restrained)
+   Light Theme Only — No Dark Mode
+   ========================================================================== */
+
+:root {
+  /* Brand & Core Palette */
+  --color-primary: #1F3D2B;             /* Deep Botanical Green (headers, primary buttons, hover links) */
+  --color-primary-hover: #162E20;       /* Darker Botanical Green */
+  --color-primary-light: #EBF2EC;       /* Botanical Tint Surface */
+  --color-primary-border: #CCD8CF;      /* Botanical Light Border */
+
+  /* Institutional Link Colors */
+  --color-link: #1F5A8A;                /* Standard Institutional Blue */
+  --color-link-visited: #5B3A7A;        /* Standard Institutional Visited Purple */
+  --color-link-hover: #1F3D2B;          /* Primary Green on hover */
+
+  --color-accent: #B08D57;              /* Muted Gold Rule */
+  --color-accent-hover: #987847;        /* Darker Muted Gold for hover */
+  --color-accent-light: #FAF7F0;        /* Subtle Light Accent Surface */
+  --color-accent-border: #DCD0BD;       /* Subtle Accent Border */
+
+  /* Institutional Background & Surface Palette */
+  --color-bg: #FFFFFF;                  /* Page Background */
+  --color-bg-page: #FFFFFF;             /* Page Canvas */
+  --color-bg-alt: #F4F5F2;              /* Alternating Band & Utility Bar Background */
+  --color-surface: #FFFFFF;             /* Surface Panels */
+  --color-surface-subtle: #F4F5F2;      /* Neutral Surface */
+  
+  /* Borders (Subtle 1px, No Shadows) */
+  --color-border: #C9CEC6;              /* Standard Panel & Section Border (1px) */
+  --color-border-subtle: #DEE2DC;       /* Subtle Hairline Border */
+  --color-border-input: #6B726B;        /* Input/Textarea Border (1px #6B726B) */
+  --color-border-strong: #8A928A;       /* High Contrast Border */
+
+  /* Typography Colors (WCAG AAA compliant) */
+  --color-text-primary: #1A1A1A;        /* Body Text Color on White / Near-White */
+  --color-text-secondary: #333333;      /* Secondary Institutional Text */
+  --color-text-muted: #595959;          /* Captions / Meta (>= 13px minimum) */
+  --color-text-inverse: #FFFFFF;        /* Contrast Text on Primary Solid */
+
+  /* Functional Status Colors (Institutional Tone) */
+  --color-status-success: #1E5C38;
+  --color-status-success-bg: #F0F7F2;
+  --color-status-success-border: #B8D8C2;
+
+  --color-status-warning: #8A5200;
+  --color-status-warning-bg: #FFF8EE;
+  --color-status-warning-border: #E8D2AA;
+
+  --color-status-error: #A01E1E;
+  --color-status-error-bg: #FDF1F1;
+  --color-status-error-border: #E8B8B8;
+
+  --color-status-info: #1F5A8A;
+  --color-status-info-bg: #F0F5FA;
+  --color-status-info-border: #BED4E8;
+
+  /* Typography Scale */
+  --font-family-sans: "Noto Sans", "Noto Sans Devanagari", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-family-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* Strict Institutional Scale */
+  --font-size-h1: 30px;
+  --font-weight-h1: 700;
+  --line-height-h1: 1.25;
+
+  --font-size-h2: 22px;
+  --font-weight-h2: 600;
+  --line-height-h2: 1.3;
+
+  --font-size-h3: 18px;
+  --font-weight-h3: 600;
+  --line-height-h3: 1.35;
+
+  --font-size-body: 16px;
+  --font-weight-body: 400;
+  --line-height-body: 1.6;             /* Body line-height 1.6 */
+
+  --font-size-small: 14px;              /* Small text: 14px */
+  --font-weight-small: 400;
+  --line-height-small: 1.5;
+
+  --font-size-min: 13px;                /* Minimum text size anywhere */
+
+  /* Spacing Scale */
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-5: 20px;
+  --spacing-6: 24px;
+  --spacing-8: 32px;
+  --spacing-10: 40px;
+  --spacing-12: 48px;
+
+  /* Radius: 2px Everywhere (Buttons, Inputs, Panels). No Pill Shapes. */
+  --radius-sm: 2px;
+  --radius-md: 2px;
+  --radius-lg: 2px;
+  --radius-full: 2px;
+
+  /* Shadows: None (Subtle 1px border only, no glassmorphism, no gradients) */
+  --shadow-none: none;
+  --shadow-sm: none;
+  --shadow-md: none;
+  --shadow-lg: none;
+
+  /* Motion: 150ms ease-out only for color/opacity */
+  --transition-fast: 150ms ease-out;
+  --transition-normal: 150ms ease-out;
+
+  /* Container Widths */
+  --container-max-width: 1200px;        /* Max-width 1200px */
+}
+
+/* Base Accessibility & Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-family-sans);
+  font-size: 16px;
+  line-height: var(--line-height-body);
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-page);
+  color-scheme: light;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-page);
+}
+
+/* Links: #1F5A8A with underline; visited #5B3A7A; hover #1F3D2B */
+a {
+  color: var(--color-link);
+  text-decoration: underline;
+  transition: color var(--transition-fast);
+}
+
+a:visited {
+  color: var(--color-link-visited);
+}
+
+a:hover, a:focus {
+  color: var(--color-link-hover);
+  text-decoration: underline;
+}
+
+/* Visible Keyboard Focus Ring: 3px solid outline #B08D57 with 2px offset */
+:focus-visible {
+  outline: 3px solid var(--color-accent) !important;
+  outline-offset: 2px !important;
+}
+
+/* Reduced Motion Override */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
