@@ -1,5 +1,7 @@
 # IP-SAKTI Sahayak
 
+![IP-SAKTI Sahayak UI](HomePage.png)
+
 **A multilingual, RAG-based, source-cited AI assistant for Intellectual Property and regulatory guidance in Ayurveda, across national and international regimes.**
 
 Team **KG-FORGE** | **TEKATHON 5.0 (2026)** | Problem Statement **SIH26092** | Theme: MedTech / BioTech / HealthTech | Category: Software
@@ -9,6 +11,7 @@ Team **KG-FORGE** | **TEKATHON 5.0 (2026)** | Problem Statement **SIH26092** | T
 ---
 
 ## Table of Contents
+
 - [The Problem](#the-problem)
 - [What It Does](#what-it-does)
 - [How It Works](#how-it-works)
@@ -31,7 +34,7 @@ AYUSH startups, MSMEs, practitioners and cultivators struggle with this. Genuine
 ## What It Does
 
 - **Jurisdiction switch (India | International):** two visibly separate, cited answer sets, so national and international law are never mixed.
-- **Formulation classifier:** asks the minimum clarifying questions and classifies the product as *classical, proprietary, new drug, phytopharmaceutical, Ayurveda-Aahar/nutraceutical* or *cosmetic*, then states that category's regulatory requirements and IP/ABS posture. For example, a classical formulation faces the Section 3(p) patent bar and is defended through TKDL, while a new drug has patent potential but needs clinical evidence.
+- **Formulation classifier:** asks the minimum clarifying questions and classifies the product as _classical, proprietary, new drug, phytopharmaceutical, Ayurveda-Aahar/nutraceutical_ or _cosmetic_, then states that category's regulatory requirements and IP/ABS posture. For example, a classical formulation faces the Section 3(p) patent bar and is defended through TKDL, while a new drug has patent potential but needs clinical evidence.
 - **Seven-regime IP routing:** Patents, GI, Trademarks, Designs, Copyright, Plant Varieties and Trade Secrets.
 - **ABS-compliance helper and TKDL prior-art pointer:** takes the user from a question to the right registry, record or form.
 - **Clause-level source-cited RAG:** every answer cites the specific statute, rule, treaty article or record it relies on.
@@ -55,14 +58,14 @@ User query (any Indian language)
 
 ## Tech Stack
 
-| Layer | Technology |
-|---|---|
-| Frontend | React, Tailwind CSS |
-| Backend | Python, FastAPI, REST APIs |
-| Database | PostgreSQL + pgvector |
-| AI / NLP | LLM, multilingual embeddings, reranking, query classifier |
-| Multilingual | Bhashini (translation, ASR, TTS) |
-| DevOps | Docker, AWS |
+| Layer        | Technology                                                |
+| ------------ | --------------------------------------------------------- |
+| Frontend     | React, Tailwind CSS                                       |
+| Backend      | Python, FastAPI, REST APIs                                |
+| Database     | PostgreSQL + pgvector                                     |
+| AI / NLP     | LLM, multilingual embeddings, reranking, query classifier |
+| Multilingual | Bhashini (translation, ASR, TTS)                          |
+| DevOps       | Docker, AWS                                               |
 
 > The frontend is built. Backend, database and AI components above are the planned architecture.
 
@@ -70,29 +73,31 @@ User query (any Indian language)
 
 The corpus will be built from open, authoritative public sources and version-tracked:
 
-| Source | Used for |
-|---|---|
-| [India Code](https://indiacode.nic.in) | Statutes and rules |
-| [IP India](https://ipindia.gov.in) | Patents / InPASS, trade marks, designs, GI Registry |
-| [National Biodiversity Authority](https://nbaindia.org) | ABS and Biological Diversity Act material |
-| [TKDL](https://tkdl.res.in) | Traditional knowledge and prior art |
-| [WIPO](https://wipo.int) | International treaties |
+| Source                                                  | Used for                                            |
+| ------------------------------------------------------- | --------------------------------------------------- |
+| [India Code](https://indiacode.nic.in)                  | Statutes and rules                                  |
+| [IP India](https://ipindia.gov.in)                      | Patents / InPASS, trade marks, designs, GI Registry |
+| [National Biodiversity Authority](https://nbaindia.org) | ABS and Biological Diversity Act material           |
+| [TKDL](https://tkdl.res.in)                             | Traditional knowledge and prior art                 |
+| [WIPO](https://wipo.int)                                | International treaties                              |
 
 **Regulatory scope**
+
 - **India:** Patents Act and Rules 2024, GI Act, Trade Marks Act, Designs Act, Copyright Act, PPVFR Act, Biological Diversity Act (2023 amendment) and Rules 2024, Drugs and Cosmetics Act, Drugs and Magic Remedies (Objectionable Advertisements) Act, FSSAI Ayurveda-Aahar regulations.
 - **International:** TRIPS, CBD and Nagoya Protocol, WIPO GRATK Treaty (2024), PCT, Madrid, Hague, Budapest Treaty.
 
 ## Project Status and Roadmap
 
-| Stage | Scope | Status |
-|---|---|---|
-| Frontend | React + Tailwind UI prototype | Done |
-| Backend | FastAPI service, PostgreSQL + pgvector schema | Planned |
-| Corpus ingestion | India Code, IP India, NBA/ABS, TKDL | Planned |
-| Classifier + RAG | Formulation classification, cited retrieval | Planned |
-| Integration | API wired to frontend | Planned |
+| Stage            | Scope                                         | Status  |
+| ---------------- | --------------------------------------------- | ------- |
+| Frontend         | React + Tailwind UI prototype                 | Done    |
+| Backend          | FastAPI service, PostgreSQL + pgvector schema | Planned |
+| Corpus ingestion | India Code, IP India, NBA/ABS, TKDL           | Planned |
+| Classifier + RAG | Formulation classification, cited retrieval   | Planned |
+| Integration      | API wired to frontend                         | Planned |
 
 **Build phases**
+
 1. **Phase 1 (MVP):** citation-grounded RAG, jurisdiction switch, formulation classifier.
 2. **Phase 2:** knowledge graph and agentic multi-source orchestration.
 3. **Phase 3:** paid-source connectors (only with explicit, logged user permission) and full multilingual and voice experience.
@@ -102,6 +107,7 @@ The corpus will be built from open, authoritative public sources and version-tra
 The frontend prototype is available now. The backend is under development.
 
 ### Run the frontend
+
 ```bash
 git clone https://github.com/kartikson/IP_Sakti_Sahayak.git
 cd IP_Sakti_Sahayak/frontend
@@ -109,9 +115,11 @@ cd IP_Sakti_Sahayak/frontend
 npm install
 npm run dev
 ```
+
 Then open the local address shown in the terminal.
 
 ### Backend
+
 Coming soon. Setup instructions will be added once the API is ready.
 
 ## Evaluation
@@ -135,15 +143,15 @@ Quality will be measured on a golden question set across four metrics:
 
 **KG-FORGE**
 
-| Name | Role |
-|---|---|
-| Kartik Soni | Team Leader |
-| Gifty | Team Member |
-| Akash Kumar | Team Member |
+| Name          | Role        |
+| ------------- | ----------- |
+| Kartik Soni   | Team Leader |
+| Gifty         | Team Member |
+| Akash Kumar   | Team Member |
 | Sonali Sharma | Team Member |
-| Vanshika | Team Member |
+| Vanshika      | Team Member |
 | Samarth Kumar | Team Member |
 
 ---
 
-*Built for the Ministry of AYUSH problem statement SIH26045, SIH (2026).*
+_Built for the Ministry of AYUSH problem statement SIH26045, SIH (2026)._
